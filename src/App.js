@@ -1,22 +1,15 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text} from 'react-native';
-
+import {SplashScreen} from './screens/index';
+import {ThemeProvider} from 'styled-components';
+import { theme } from './styles/theme';
 
 const App = () => {
-  
-  return (
-    <SafeAreaView style={styles.sectionView}>
-      <Text>Olá mundo</Text>
-    </SafeAreaView>
+    return (
+      <ThemeProvider theme={theme}>
+        <SplashScreen />
+      </ThemeProvider>
+   
   );
 };
-
-const styles = StyleSheet.create({
-  sectionView:{
-    width:100,
-    height:100,
-     backgroundColor:'red'
-  }
-});
 
 export default App;
