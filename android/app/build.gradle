@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.finderhouse"
+        applicationId "com.finderhouses"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -219,4 +219,7 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); 
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+applyNativeModulesAppBuildGradle(project)
