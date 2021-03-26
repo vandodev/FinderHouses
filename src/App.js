@@ -7,7 +7,7 @@ import StoryBook from '../storybook';
 const App = () => {
     return (
       <ThemeProvider theme={theme}>
-        <HomeScreen />
+        <StoryBook />
       </ThemeProvider>
    
   );
