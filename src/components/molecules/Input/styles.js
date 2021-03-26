@@ -17,5 +17,6 @@ export const InputText = styled.TextInput`
     font-size:${({theme}) => theme.metrics.px(16)}px;
     color: white;
     padding-left:${({theme}) => theme.metrics.px(12)}px;
+    font-family: 'Montserrat-Regular';
 `;
 
